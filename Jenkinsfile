@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_HUB_CREDENTIALS = 'Docker-hub'
-        IMAGE_NAME = 'preyelg/java-web-calculator'
+        DOCKER_HUB_CREDENTIALS = 'docker'
+        IMAGE_NAME = 'preye234/java-web-calculator'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'new', url: 'https://github.com/preyelg/JavaWeb3.git'
+                git branch: 'new', url: 'https://github.com/preye419/JavaWeb3.git'
             }
         }
 
